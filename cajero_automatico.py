@@ -1,4 +1,3 @@
-# AUTOR: JORGEADX
 """
 Este programa funciona como cajero automático interactivo para utilizar hasta que
 el inventario quede vacío o el usuario desee salir oprimiendo '0'. El sistema se 
@@ -11,6 +10,8 @@ con el de mayor denominación; Si no puede dispensar esa cantidad imprime msj.
 
 Cuando quedan $1000 o menos en el inventario el sistema genera una alerta.
 
+Autor: JorgeAdx
+Fecha: 28 de septiembre de 2025
 """
 inventario = {    # Define inventario de forma global
     1000: 10,    # Comienza con 10 billetes por unidad
@@ -79,3 +80,4 @@ while True:    # Se tratará de ejecutar hasta que el usuario ingrese '0'
         dispensar_billetes(monto_solicitado)    # Entrega efectivo en casos esperados
     except ValueError:    # Maneja error de unidad
         print("Por favor, ingrese un número válido.")
+
